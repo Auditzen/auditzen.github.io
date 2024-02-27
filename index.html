@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Checklist & Templates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Audit Checklist & Templates</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Checklists & Templates</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Help & Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="main-content">
+        <h2>Find the Right Checklist or Template for Your Audit Needs</h2>
+        <p>Explore our extensive collection of audit checklists and templates organized by categories, subcategories, and tags.</p>
+        <form action="#" method="GET">
+            <input type="text" name="search" id="search" placeholder="Search for checklists or templates...">
+            <button type="submit">Search</button>
+        </form>
+        <div id="featured-items">
+            <!-- Featured items will be dynamically populated here -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Audit Checklist & Templates. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<section id="checklists-templates">
+    <h2>Explore Checklists & Templates</h2>
+    <div class="categories">
+        <h3>Categories</h3>
+        <ul id="category-list">
+            <!-- Categories will be dynamically populated here -->
+        </ul>
+    </div>
+    <div class="subcategories">
+        <h3>Subcategories</h3>
+        <ul id="subcategory-list">
+            <!-- Subcategories will be dynamically populated here -->
+        </ul>
+    </div>
+    <div class="tags">
+        <h3>Tags</h3>
+        <ul id="tag-list">
+            <!-- Tags will be dynamically populated here -->
+        </ul>
+    </div>
+    <div id="checklists-templates-list">
+        <!-- Checklists and templates will be dynamically populated here -->
+    </div>
+</section>
+// Add to script.js
+
+// Sample data for checklists and templates
+const checklistsTemplatesData = [
+    { title: 'Sample Financial Audit Checklist', category: 'Financial Audits', subcategory: 'Annual Financial Statements', tags: ['Balance Sheet', 'Profit and Loss Statement'] },
+    { title: 'Sample GST Compliance Template', category: 'Compliance Audits', subcategory: 'GST Compliance', tags: ['GST Returns Filing', 'Input Tax Credit Reconciliation'] },
+    { title: 'Sample Inventory Management Checklist', category: 'Operational Audits', subcategory: 'Inventory Management', tags: ['Inventory Valuation', 'Stock Reconciliation'] },
+    // Add more sample items as needed
+];
+
+// Function to populate checklists and templates
+function populateChecklistsTemplates() {
+    const checklistTemplatesList = document.getElementById('checklists-templates-list');
+    checklistTemplatesList.innerHTML = '';
+    checklistsTemplatesData.forEach(item => {
+        const itemHTML = `
+            <div class="checklist-template">
+                <h3>${item.title}</h3>
+                <p><strong>Category:</strong> ${item.category}</p>
+                <p><strong>Subcategory:</strong> ${item.subcategory}</p>
+                <p><strong>Tags:</strong> ${item.tags.join(', ')}</p>
+                <button>Download</button>
+            </div>
+        `;
+        checklistTemplatesList.insertAdjacentHTML('beforeend', itemHTML);
+    });
+}
+
+// Populate checklists and templates on page load
+window.addEventListener('load', () => {
+    populateChecklistsTemplates();
+});
+<section id="user-accounts">
+    <h2>User Accounts</h2>
+    <div id="login-form">
+        <h3>Login</h3>
+        <form action="#" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="registration-form">
+        <h3>Register</h3>
+        <form action="#" method="POST">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</section>
+<section id="profile-management">
+    <h2>Profile Management</h2>
+    <div id="profile-info">
+        <h3>Update Profile Information</h3>
+        <form action="#" method="POST">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="New Password">
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</section>
+<section id="user-interactions">
+    <h2>User Interactions</h2>
+    <div id="favorites">
+        <h3>Favorites</h3>
+        <ul id="favorites-list">
+            <!-- Favorites will be dynamically populated here -->
+        </ul>
+    </div>
+    <div id="history">
+        <h3>Recently Viewed</h3>
+        <ul id="history-list">
+            <!-- Recently viewed items will be dynamically populated here -->
+        </ul>
+    </div>
+</section>
+<section id="community">
+    <h2>Community</h2>
+    <div id="discussion-forums">
+        <h3>Discussion Forums</h3>
+        <!-- Discussion forums will be dynamically populated here -->
+    </div>
+    <div id="comments">
+        <h3>Comments</h3>
+        <ul id="comments-list">
+            <!-- Comments will be dynamically populated here -->
+        </ul>
+        <form id="comment-form">
+            <input type="text" id="comment-text" placeholder="Write a comment...">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+<section id="about-us">
+    <h2>About Us</h2>
+    <div id="mission-statement">
+        <h3>Mission Statement</h3>
+        <p>Our mission is to provide a comprehensive resource for auditors in India, offering organized access to various audit checklists and templates tailored to Indian auditing practices.</p>
+    </div>
+    <div id="team">
+        <h3>Our Team</h3>
+        <ul>
+            <li>John Doe - Founder & CEO</li>
+            <li>Jane Smith - Chief Operating Officer</li>
+            <li>Michael Johnson - Lead Developer</li>
+            <!-- Add more team members as needed -->
+        </ul>
+    </div>
+</section>
+<section id="help-support">
+    <h2>Help and Support</h2>
+    <div id="faqs">
+        <h3>FAQs</h3>
+        <ul>
+            <li>
+                <h4>How do I download a checklist/template?</h4>
+                <p>To download a checklist/template, simply click on the "Download" button next to the item you want to download.</p>
+            </li>
+            <li>
+                <h4>Can I customize the checklists/templates?</h4>
+                <p>Yes, you can customize the checklists/templates before downloading them. Click on the item to view customization options.</p>
+            </li>
+            <!-- Add more FAQs as needed -->
+        </ul>
+    </div>
+    <div id="contact-form">
+        <h3>Contact Us</h3>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+<meta name="description" content="Comprehensive audit checklist and templates website for Indian auditors. Access various checklists and templates for financial audits, compliance audits, operational audits, and risk management audits.">
+<meta name="keywords" content="audit checklist, audit templates, Indian auditors, financial audits, compliance audits, operational audits, risk management audits">
+<title>Audit Checklist & Templates - Your Website Name</title>

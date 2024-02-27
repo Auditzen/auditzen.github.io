@@ -1,0 +1,316 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#main-content {
+    padding: 50px;
+    text-align: center;
+}
+
+#search {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Add to styles.css */
+#checklists-templates {
+    padding: 50px;
+}
+
+#checklists-templates h2 {
+    text-align: center;
+}
+
+.categories,
+.subcategories,
+.tags {
+    margin-bottom: 30px;
+}
+
+.categories h3,
+.subcategories h3,
+.tags h3 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+#checklists-templates-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.checklist-template {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+/* Add to styles.css */
+#user-accounts {
+    padding: 50px;
+    text-align: center;
+}
+
+#user-accounts h2 {
+    margin-bottom: 30px;
+}
+
+#login-form,
+#registration-form {
+    display: inline-block;
+    margin-right: 50px;
+    text-align: left;
+}
+
+#login-form h3,
+#registration-form h3 {
+    margin-bottom: 20px;
+}
+
+#login-form input,
+#registration-form input {
+    display: block;
+    width: 300px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#login-form button,
+#registration-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+/* Add to styles.css */
+#profile-management {
+    padding: 50px;
+    text-align: center;
+}
+
+#profile-management h2 {
+    margin-bottom: 30px;
+}
+
+#profile-info {
+    display: inline-block;
+    text-align: left;
+}
+
+#profile-info h3 {
+    margin-bottom: 20px;
+}
+
+#profile-info input {
+    display: block;
+    width: 300px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#profile-info button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+/* Add to styles.css */
+#user-interactions {
+    padding: 50px;
+    text-align: center;
+}
+
+#user-interactions h2 {
+    margin-bottom: 30px;
+}
+
+#favorites,
+#history {
+    display: inline-block;
+    text-align: left;
+    margin-right: 50px;
+}
+
+#favorites h3,
+#history h3 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+/* Add to styles.css */
+#community {
+    padding: 50px;
+    text-align: center;
+}
+
+#community h2 {
+    margin-bottom: 30px;
+}
+
+#discussion-forums,
+#comments {
+    display: inline-block;
+    text-align: left;
+    margin-right: 50px;
+}
+
+#discussion-forums h3,
+#comments h3 {
+    margin-bottom: 20px;
+}
+
+#comment-text {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#comment-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+/* Add to styles.css */
+#about-us {
+    padding: 50px;
+    text-align: center;
+}
+
+#about-us h2 {
+    margin-bottom: 30px;
+}
+
+#mission-statement,
+#team {
+    display: inline-block;
+    text-align: left;
+    margin-right: 50px;
+}
+
+#mission-statement h3,
+#team h3 {
+    margin-bottom: 20px;
+}
+
+#team ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#team ul li {
+    margin-bottom: 10px;
+}
+/* Add to styles.css */
+#help-support {
+    padding: 50px;
+    text-align: center;
+}
+
+#help-support h2 {
+    margin-bottom: 30px;
+}
+
+#faqs,
+#contact-form {
+    display: inline-block;
+    text-align: left;
+    margin-right: 50px;
+}
+
+#faqs h3,
+#contact-form h3 {
+    margin-bottom: 20px;
+}
+
+#faqs ul {
+    padding: 0;
+}
+
+#faqs ul li {
+    margin-bottom: 20px;
+}
+
+#faqs ul li h4 {
+    margin-bottom: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    display: block;
+    width: 300px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#contact-form textarea {
+    height: 100px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
